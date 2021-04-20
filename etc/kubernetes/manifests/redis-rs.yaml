@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: redis-rs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-label
+  template:
+    metadata:
+      labels:
+        app: redis-label
+    spec:
+      containers:
+        -
+          image: redis
+          name: redis-container
+          ports:
+            - containerPort: 6379
+          volumeMounts:
+            -
+              mountPath: /data
+              name: redis-volume
+      volumes:
+        -
+          name: redis-volume
+          emptyDir: {}
+          
