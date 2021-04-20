@@ -1,5 +1,6 @@
 FROM ruby
 RUN gem install sinatra
+RUN gem install thin
 COPY hasher.rb .
 
 ENTRYPOINT ["ruby"]
