@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: rng-ds
+spec:
+  # replicas: 2  --> el DS se ejecuta 1 vez por VM
+  selector:
+    matchLabels:
+      app: rng-label
+  template:
+    metadata:
+      labels:
+        app: rng-label
+    spec:
+      containers:
+        -
+          image: mjgrppr/mj-dockercoins:latest-rng
+          name: rng-container
+          ports:
+            - containerPort: 8080
