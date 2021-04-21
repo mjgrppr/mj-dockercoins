@@ -10,11 +10,17 @@ spec:
           namespaceSelector:
             matchLabels:
               name: dca-phpinfo
+        -
+          namespaceSelector:
+            matchLabels:
               name: santander-dockercoins
         -
           podSelector:
             matchLabels:
               app: dca-phpinfo
+        -
+          podSelector:
+            matchLabels:
               app: worker-label
       ports:
         -
