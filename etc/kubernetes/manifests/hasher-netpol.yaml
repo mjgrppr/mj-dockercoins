@@ -10,6 +10,7 @@ spec:
           namespaceSelector:
             matchLabels:
               name: santander-dockercoins
+        -
           podSelector:
             matchLabels:
               app: worker-label
