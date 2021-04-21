@@ -7,24 +7,6 @@ spec:
     -
       from: 
         -
-          namespaceSelector:
-            matchLabels:
-              name: dca-phpinfo
-        -
-          podSelector:
-            matchLabels:
-              app: dca-phpinfo
-      ports:
-        -
-          port: 8080
-          protocol: TCP
-    -
-      from: 
-        -
-          namespaceSelector:
-            matchLabels:
-              name: santander-dockercoins
-        -
           podSelector:
             matchLabels:
               app: worker-label
