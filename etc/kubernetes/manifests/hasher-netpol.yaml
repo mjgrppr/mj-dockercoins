@@ -14,10 +14,6 @@ spec:
         -
           port: 8080
           protocol: TCP
-      ports:
-        -
-          port: 8080
-          protocol: TCP
   podSelector: 
     matchLabels: 
       app: hasher-label
