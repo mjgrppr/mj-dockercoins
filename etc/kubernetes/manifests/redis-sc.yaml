@@ -3,4 +3,6 @@ Kind: StorageClass
 metadata:
   name: redis-sc
 provisioner: kubernetes.io/no-provisioner
+#No destruir el volumen cuando no se esté usando, mantenerlos.
+reclaimPolicy: Retain
 volumeBindingMode: WaitForFirstConsumer
