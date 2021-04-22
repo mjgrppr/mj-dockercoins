@@ -7,6 +7,10 @@ spec:
     -
       from: 
         -
+          namespaceSelector:
+            matchLabels:
+              name: mj-dockercoins
+        -
           podSelector:
             matchLabels:
               app: worker-label
