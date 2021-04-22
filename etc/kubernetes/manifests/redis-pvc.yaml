@@ -10,7 +10,6 @@ spec:
       storage: 1Gi
     requests:
       storage: 1Gi
-  # tipo de almacenamiento gp2 --> general purpose 2, es un plugin que provee Amazon
-  storageClassName: gp2
+
     
   
