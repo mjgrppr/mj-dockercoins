@@ -10,4 +10,4 @@ spec:
       storage: 1Gi
     requests:
       storage: 1Gi
-  storageClassMName: local
+  storageClassName: local
