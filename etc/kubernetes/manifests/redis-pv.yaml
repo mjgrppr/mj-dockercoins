@@ -9,4 +9,4 @@ spec:
     - readWriteOnce
   hostPath:
     path: /tmp/redis
-  storageClassName: local
+  storageClassName: redis-sc
